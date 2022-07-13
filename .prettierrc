@@ -1,1 +1,12 @@
-{}
+{
+    "printWidth": 100,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "editor.formatOnSave": true,
+    "proseWrap": "always",
+    "requireConfig": false,
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false
+  }
