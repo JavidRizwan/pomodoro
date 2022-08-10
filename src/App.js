@@ -8,8 +8,8 @@ import "./App.scss";
 
 const App = () => {
   const beepAudio = useRef(null);
-  const [sessionLength, setSessionLength] = useState(1);
-  const [breakLength, setBreakLength] = useState(1);
+  const [sessionLength, setSessionLength] = useState(25);
+  const [breakLength, setBreakLength] = useState(5);
   const [timeLeft, setTimeLeft] = useState(sessionLength * 60);
   const [intervalId, setIntervalId] = useState(null);
   const [activeState, setActiveState] = useState("Session");
@@ -37,7 +37,7 @@ const App = () => {
             return prev - 1;
           }
         });
-      }, 100);
+      }, 1000);
       setIntervalId(newInterval);
     } else {
       clearInterval(intervalId);
